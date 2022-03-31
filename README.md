@@ -1,5 +1,5 @@
 # file_ssm
-## 基于SSM框架实现文件（.excel和.csv）上传读取并存储到mysql数据库
+## 基于SSM框架实现.xlsx/.xls和.csv类文件上传读取并存储到mysql数据库
 
 -----
 整体实现了SSM网页框架的搭建，实现了对.xls、.xlsx、csv文件的读取，可视化展示，并支持修改字段信息，之后存入mysql数据库。
