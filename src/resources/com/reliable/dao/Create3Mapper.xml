@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.reliable.dao.Create3Mapper">
+    <update id="createTable3" parameterType="map">
+        CREATE TABLE `${tableName}` (
+            `field_name` VARCHAR(255) NOT NULL COMMENT #{comment_1},
+            `field_state` VARCHAR(255) NOT NULL COMMENT #{comment_2}
+        )ENGINE=INNODB DEFAULT CHARSET=utf8;
+    </update>
+    <!--如果原表存在则删除表-->
+    <update id="dropTable3" parameterType="map">
+        drop table  if exists ${tableName}
+    </update>
+</mapper>
